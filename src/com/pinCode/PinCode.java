@@ -6,7 +6,7 @@ import java.util.*;
 public class PinCode {
 	
 	public static boolean isValidPinCode(String pinCode) {
-		String regex="^[1-9][0-9]{5}";
+		String regex="^[1-9][0-9]{5}$";
 		Pattern pattern=Pattern.compile(regex);
 		return pattern.matcher(pinCode).matches();
 	}
